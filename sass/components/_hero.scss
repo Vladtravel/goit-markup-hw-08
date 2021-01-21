@@ -10,8 +10,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
-    height: 600px;
+    
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,12 +19,12 @@
     margin: 0 auto;
 
     &__title {
-      width: 696px;
-      height: 120px;
+      width: 360px;
+      height: 84px;
       font-family: Roboto;
       font-style: normal;
       font-weight: 900;
-      font-size: 44px;
+      font-size: 26px;
       line-height: 1.36;
       text-align: center;
       letter-spacing: 0.06em;
@@ -80,8 +80,8 @@
   
   .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;    
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -206,19 +206,19 @@
     
   .checkbox {
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
     &__label {
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 12px;
+      line-height: 14px;
       letter-spacing: 0.03em;
       color: #757575;
       display: flex;
       align-items: center;
-      margin-left: 13px;
+      
     }
 
     &__input {

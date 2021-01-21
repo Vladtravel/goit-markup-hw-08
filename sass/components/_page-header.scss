@@ -1,13 +1,16 @@
+
+ 
  .page-header {
     background-color: $bg-color-white;
     border-bottom: 1px solid #ececec;
     position: relative;
+   
 
     &__logo {
       font-family: Raleway;
       font-style: normal;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 24px;
       line-height: 1.19;
       letter-spacing: 0.03em;
       color: $primary-text-color;
@@ -22,19 +25,56 @@
     }
   }
 
-  .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
   .main-nav {
     display: flex;
     align-items: center;
     height: 80px;
     justify-content: space-between;
+    
+
+    &__button{     
+      display: inline-flex;
+      padding: 0; 
+      margin: 0;    
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+
+      &.is-open .icon-cross{
+        display: block;
+      }
+      &.is-open .icon-menu{
+        display: none;
+      }
+      &:hover{
+        fill: red;
+      }
+      
+    }    
   }   
+
+  .icon-cross{
+    display: none;
+  }
+  .icon-menu{
+    display: inline-flex;
+  }
+
+  .menu-container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: turquoise;
+
+    &.is-open{
+      display: block;  
+      }
+  }
   
   /* Главная навигация */
   .site-nav {
@@ -42,6 +82,7 @@
     padding: 0;
     margin-right: 305px;
     align-items: center;
+    display: none;
 
     &__item:not(:last-child) {
     margin-right: 50px;
@@ -93,6 +134,7 @@
     height: 16px;
     padding: 0;
     align-items: center;
+    display: none;
 
     &__item:not(:last-child) {
       margin-right: 20px;
