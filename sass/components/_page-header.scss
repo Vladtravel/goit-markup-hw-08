@@ -41,6 +41,9 @@
       height: 40px;
       border: none;
       background-color: transparent;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      outline: transparent;
 
       &.is-open .icon-cross{
         display: block;
@@ -49,7 +52,10 @@
         display: none;
       }
       &:hover{
-        fill: red;
+        fill: $text-color-blue;
+      }
+      &:focus{
+        fill: $text-color-blue;
       }
       
     }    

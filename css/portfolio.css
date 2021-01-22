@@ -86,6 +86,10 @@ ul {
   height: 40px;
   border: none;
   background-color: transparent;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: transparent;
 }
 
 .main-nav__button.is-open .icon-cross {
@@ -97,7 +101,11 @@ ul {
 }
 
 .main-nav__button:hover {
-  fill: red;
+  fill: #2196f3;
+}
+
+.main-nav__button:focus {
+  fill: #2196f3;
 }
 
 .icon-cross {
