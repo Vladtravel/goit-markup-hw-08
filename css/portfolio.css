@@ -150,7 +150,7 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
   }
@@ -184,14 +184,9 @@ ul {
     display: block;
     padding: 0;
     text-align: left;
-    margin-bottom: 302px;
-    margin-top: 0;
-    top: 0;
+    margin: 0;
+    margin-bottom: 306px;
   }
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -200,6 +195,9 @@ ul {
     margin-right: 0;
     height: 40px;
   }
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .site-nav__link {
@@ -207,7 +205,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
   height: 40px;
@@ -224,6 +222,8 @@ ul {
     padding: 0;
     height: 40px;
     font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -240,32 +240,53 @@ ul {
 }
 
 .contacts-nav {
-  height: 16px;
   padding: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-nav {
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
-}
-
-.contacts-nav__item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.contacts-nav__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  fill: #757575;
+  align-items: center;
+  height: 16px;
+  display: block;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-nav {
+    height: 100px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 400px;
+    margin-bottom: 64px;
+  }
+  .contacts-nav__item {
+    height: 34px;
+  }
+  .contacts-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .contacts-nav .mail, .contacts-nav .phone {
+    display: none;
+  }
+}
+
+.contacts-nav__link-phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
   fill: #757575;
@@ -279,7 +300,61 @@ ul {
   cursor: pointer;
 }
 
-.contacts-nav__link:hover, .contacts-nav__link:focus {
+@media screen and (max-width: 767px) {
+  .contacts-nav__link-phone {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    height: 34px;
+  }
+}
+
+.contacts-nav__link-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  fill: #757575;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 16px;
+  display: block;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.contacts-nav__link-mail:hover {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-nav__link-mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    height: 24px;
+  }
+}
+
+.contacts-nav__link-mail:hover, .contacts-nav__link-phone:hover {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.contacts-nav__link-mail:focus, .contacts-nav__link-phone:focus {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -290,6 +365,38 @@ ul {
 
 .phone {
   margin-right: 10px;
+}
+
+.network-items {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.network-items__link {
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .network-items {
+    display: none;
+  }
+}
+
+.network-items__list {
+  display: inline-block;
+}
+
+.network-items__list:not(:last-child) {
+  margin-right: 20px;
 }
 
 .footer {
