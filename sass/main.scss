@@ -11,6 +11,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   
+  
 
 &__futures{
   
@@ -29,6 +30,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px){
+    text-align: center;
+  }
 }
 
 &__text {
@@ -132,11 +137,9 @@
     }
   }
   
-  
+  // Третья секция
   .section-third {
-    background: #f5f4fa;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    background: #f5f4fa;   
     
 
     &__title {
@@ -168,8 +171,13 @@
       background: #ffffff;
       height: 622px;
       // height: 428px;
-      
+      @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+          }
+        }  
     }
+    
     // &__list:not(:last-child) {
     //   margin-right: 30px;
     // }
@@ -198,7 +206,10 @@
       margin-top: 0;
       margin-bottom: 16px;
     }
-
+    @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
 
   }  
   
@@ -218,12 +229,11 @@
     } 
   }      
   
+  // Четвертая секция
   .section-four {
-    background-color: $bg-color-white;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    background-color: $bg-color-white;    
+    padding-top: 94px;
+    padding-bottom: 94px;
     
 
     &__title {
@@ -250,12 +260,17 @@
       
     }
 
+    @media screen and (max-width: 767px){
     &__item:nth-child(-n+4) {
       margin-bottom: 30px;
       width: 210px;
-      height: 90px;
-      
+      height: 90px;      
     }
+    &__item:nth-child(2n+1) {
+      margin-right: 30px;       
+    }
+
+  }
 
         
     &__link {
@@ -275,10 +290,13 @@
       &:hover, &:focus{
         fill: $text-color-blue;
         border-color: $text-color-blue;
-      }
+      }     
 
-      
+    }
 
+    @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
   }
   
