@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />    
     <link rel="stylesheet" href="./css/main.min.css">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
@@ -182,33 +182,32 @@
             <li class="section-second__list">
               <div class="product">
                 <p class="product__text">Десктопные приложения</p>
-                <img
-                  src="./images/img1.jpg"
-                  width="370"
-                  alt="десктопы"
-                />
+
+                <picture>
+                  <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" media="(min-width: 1199px)"> 
+                    <img src="./images/img1@.jpg" alt="десктопы"/>
+                  </picture>
+                
               </div>
             </li>
 
             <li class="section-second__list">
               <div class="product">
                 <p class="product__text">Мобильные приложения</p>
-                <img
-                  src="./images/img2.jpg"
-                  width="370"
-                  alt="мобильные"
-                />
+                <picture>
+                  <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" media="(min-width: 1199px)"> 
+                    <img src="./images/img2.jpg" alt="мобильные"/>
+                  </picture>
               </div>
             </li>
 
             <li class="section-second__list">
               <div class="product">
                 <p class="product__text">Дизайнерские решения</p>
-                <img
-                  src="./images/img3.jpg"
-                  width="370"
-                  alt="дизайн"
-                />
+                <picture>
+                  <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" media="(min-width: 1199px)"> 
+                    <img src="./images/img3.jpg" alt="дизайн"/>
+                  </picture>
               </div>
             </li>
           </ul>
@@ -220,7 +219,14 @@
           <h2 class="section-third__title">Наша команда</h2>
           <ul class="section-third__team">
             <li class="section-third__list">
-              <img src="./images/ИгорьДемьяненко.jpg" width="270" height="260" alt="Игорь Демьяненко" />
+
+            <picture>
+            <source srcset="./images/Demianenko-354.jpg 1x, ./images/Demianenko-354@2x.jpg 2x" media="(min-width: 768px)"> 
+            <source srcset="./images/Demianenko-450.jpg 1x, ./images/Demianenko-450@2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/Demianenko-270.jpg 1x, ./images/Demianenko-270@2x.jpg 2x" media="(min-width: 1200px)">
+            <img src="./images/Demianenko-270.jpg" alt="Игорь Демьяненко" />
+            </picture>  
+            
               <h3 class="section-third__name-title">Игорь Демьяненко</h3>
               <p class="section-third__text-title">Product Designer</p>
               <ul class="social-networks">
@@ -255,9 +261,13 @@
               </ul>
             </li>
             <li class="section-third__list">
-              <img
-                src="./images/ОльгаРепина.jpg" width="270" height="260" alt="Ольга Репина"
-              />
+              <picture>
+                <source srcset="./images/Repina-354.jpg 1x, ./images/Repina-354@2x.jpg 2x" media="(min-width: 768px)"> 
+                <source srcset="./images/Repina-450.jpg 1x, ./images/Repina-450@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/Repina-270.jpg 1x, ./images/Repina-270@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/Repina-270.jpg" alt="Ольга Репина" />
+                </picture>
+
               <h3 class="section-third__name-title">Ольга Репина</h3>
               <p class="section-third__text-title">Frontend Developer</p>
               <ul class="social-networks">
@@ -292,9 +302,14 @@
               </ul>
             </li>
             <li class="section-third__list">
-              <img
-                src="./images/НиколайТарасов.jpg" width="270" height="260" alt="Николай Тарасов"
-              />
+            
+            <picture>
+            <source srcset="./images/Tarasov-354.jpg 1x, ./images/Tarasov-354@2x.jpg 2x" media="(min-width: 768px)"> 
+            <source srcset="./images/Tarasov-450.jpg 1x, ./images/Tarasov-450@2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./images/Tarasov-270.jpg 1x, ./images/Tarasov-270@2x.jpg 2x" media="(min-width: 1200px)">
+            <img src="./images/Tarasov-270.jpg" alt="Николай Тарасов" />
+            </picture>
+
               <h3 class="section-third__name-title">Николай Тарасов</h3>
               <p class="section-third__text-title">Marketing</p>
               <ul class="social-networks">
@@ -329,9 +344,14 @@
               </ul>
             </li>
             <li class="section-third__list">
-              <img
-                src="./images/МихаилЕрмаков.jpg" width="270" height="260" alt="Михаил Ермаков"
-              />
+              
+              <picture>
+                <source srcset="./images/Ermakov-354.jpg 1x, ./images/Ermakov-354@2x.jpg 2x" media="(min-width: 768px)"> 
+                <source srcset="./images/Ermakov-450.jpg 1x, ./images/Ermakov-450@2x.jpg 2x" media="(max-width: 767px)">
+                <source srcset="./images/Ermakov-270.jpg 1x, ./images/Ermakov-270@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/Ermakov-270.jpg" alt="Михаил Ермаков" />
+                </picture>
+
               <h3 class="section-third__name-title">Михаил Ермаков</h3>
               <p class="section-third__text-title">UI Designer</p>
               <ul class="social-networks">
@@ -412,6 +432,7 @@
 
     <footer class="footer">
       <div class="container main-footer">
+        <div class="firs-second">
         <div class="footer-first">
           <a href="./index.html" class="footer__logo"
             ><span class="footer__logo--start">Web</span
@@ -450,7 +471,8 @@
             </li>
           </ul>
         </div>
-
+      </div>
+      
         <div class="footer-third">
           <form>
             <label for="mail" class="footer-third__label">Подпишитесь на рассылку</label>

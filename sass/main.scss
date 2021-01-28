@@ -121,10 +121,13 @@
   }
   
   
-  .section-second {
-    display: none;
+  .section-second {    
     background-color: $bg-color-white;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px){
+      display: none;
+    }
     
 
     &__title {

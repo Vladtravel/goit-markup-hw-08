@@ -5,7 +5,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    
+
+     
     
     
 
@@ -19,7 +20,9 @@
       color: $primary-text-color;
       margin-left: auto;
       margin-right: auto;
-      
+      @media screen and (min-width: 1200px){
+        font-size: 26px;
+      }  
     
     &--start{
       color: $text-color-blue;
@@ -49,8 +52,10 @@
     }
   }
   .address-list:not(:last-child) {
-    // margin-bottom: 9px;
-    margin-bottom: 8px;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1200px){
+          margin-bottom: 9px;
+        }
   }
   .address-list:first-child {
     margin-top: 20px;
@@ -62,16 +67,34 @@
     align-items: baseline;      
   }
 }
+.firs-second {
+  @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+}
+  .footer-first {    
+    @media screen and (min-width: 767px){
+      margin-right: 165px;
+    } 
+    @media screen and (min-width: 1200px){
+      margin-right: 70px;
+      margin-bottom: 0;
+    }  
 
-  .footer-first {
-    // margin-right: 70px;
-    
     margin-bottom: 60px;
   }
   .footer-second {
-    // margin-right: 93px;
+    
     text-align: center;
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+      margin-right: 93px;
+      margin-bottom: 0;
+    }
 
     &__title{
       color: $text-color-white;
@@ -96,8 +119,7 @@
   .footer-third {
     display: flex;
     margin-right: 0;
-    justify-content: center;
-    
+    justify-content: center;    
     
 
     &__label {
@@ -109,28 +131,35 @@
       line-height: 16px;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      text-align: center;
       color: $text-color-white;
       margin-bottom: 20px;
       cursor: pointer;
+      @media screen and (min-width: 1200px){
+        text-align: left;
+      }
     }
 
-    &__input {
-    //   display: inline-block;
-    display: block;
+    &__input {    
+      display: block;
       width: 450px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       box-sizing: border-box;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
-      padding: 15px 16px;
-    //   margin: 0;
-    //   margin-right: 24px;
+      padding: 15px 16px;    
       margin-bottom: 20px;
       background-color: transparent;
       color: $text-color-white;
       margin-left: auto;
       margin-right: auto;
+
+      @media screen and (min-width: 1200px){
+        width: 358px;
+        margin: 0;
+        margin-right: 24px;
+      }
     }
 
     &__button {
@@ -169,9 +198,13 @@
   
   
   .input-button {
-    // display: flex;
+    
     margin-right: 0;
-    // flex-wrap: wrap;
+    @media screen and (min-width: 1200px){
+      display: flex;
+
+    }
+    
   }
     
   
