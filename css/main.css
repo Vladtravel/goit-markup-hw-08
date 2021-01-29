@@ -10,24 +10,6 @@ body {
   min-width: 480px;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    width: 1200px;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -602,6 +584,7 @@ ul {
   .footer-first {
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -614,6 +597,7 @@ ul {
   .footer-second {
     margin-right: 93px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -765,6 +749,12 @@ ul {
           justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    height: 600px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-hero {
     background-image: url(../images/Imghero@2x.jpg);
@@ -783,7 +773,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 0;
+  margin-top: 118px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -795,12 +785,14 @@ ul {
     height: 120px;
     font-size: 44px;
     line-height: 60px;
+    margin-top: 200px;
   }
 }
 
 .section-hero__button {
   height: 50px;
   margin-top: 0;
+  margin-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -827,6 +819,12 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero__button {
+    margin-bottom: 200px;
+  }
 }
 
 .backdrop {
@@ -1136,6 +1134,24 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section-first {

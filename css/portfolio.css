@@ -10,24 +10,6 @@ body {
   min-width: 480px;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body {
-    width: 1200px;
-  }
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -602,6 +584,7 @@ ul {
   .footer-first {
     margin-right: 70px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -614,6 +597,7 @@ ul {
   .footer-second {
     margin-right: 93px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -791,6 +775,24 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button-futures {
@@ -1007,7 +1009,6 @@ ul {
   margin-bottom: 30px;
   padding-top: 0;
   width: 450px;
-  height: 404px;
 }
 
 .section-futures__item:nth-child(3n + 1) {
@@ -1021,7 +1022,6 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-futures__item {
     width: 354px;
-    height: 440px;
     margin: 0;
   }
   .section-futures__item:nth-child(2n+1) {
@@ -1035,7 +1035,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .section-futures__item {
     width: 370px;
-    height: 404px;
   }
 }
 
