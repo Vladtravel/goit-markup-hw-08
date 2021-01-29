@@ -50,14 +50,9 @@
 }
 &__list{
   &:not(:last-child) {
-  margin-right: 30px; 
-  }
-  
-  @media screen and (min-width: 1200px){ 
-  &:not(:last-child) {
   margin-right: 8px; 
-}
-} 
+  }  
+ 
 }
 
 @media screen and (max-width: 767px) {   
@@ -147,8 +142,7 @@ padding-bottom: 50px;
     }
 
     &__link {
-    width: 450px;
-    height: 404px;
+    width: 450px;    
     background: #ffffff;
     border: 1px solid #eeeeee;
     margin: 0;
@@ -159,11 +153,11 @@ padding-bottom: 50px;
     
     @media screen and (min-width: 768px){
     width: 354px;
-    height: 440px;
+    
     }
     @media screen and (min-width: 1200px){
     width: 370px;
-    height: 404px;
+    
     }
     }
         

@@ -4,10 +4,6 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
   font-style: normal;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  min-width: 480px;
 }
 
 img {
@@ -848,13 +844,7 @@ ul {
 }
 
 .button-futures__list:not(:last-child) {
-  margin-right: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .button-futures__list:not(:last-child) {
-    margin-right: 8px;
-  }
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
@@ -960,7 +950,6 @@ ul {
 
 .section-futures__link {
   width: 450px;
-  height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin: 0;
@@ -975,14 +964,12 @@ ul {
 @media screen and (min-width: 768px) {
   .section-futures__link {
     width: 354px;
-    height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-futures__link {
     width: 370px;
-    height: 404px;
   }
 }
 
