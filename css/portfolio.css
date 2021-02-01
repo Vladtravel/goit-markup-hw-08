@@ -4,6 +4,7 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
   font-style: normal;
+  min-width: 480px;
 }
 
 img {
@@ -152,6 +153,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    width: 100%;
   }
 }
 
