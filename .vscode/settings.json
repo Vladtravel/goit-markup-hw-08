@@ -19,5 +19,33 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
+    ],
+    "cSpell.customWorkspaceDictionaries": [
+    
+    ],
+    "cSpell.languageSettings": [
+    
+    ],
+    "cSpell.language": "en,ru",
+    "cSpell.words": [
+        "demianenko",
+        "foto",
+        "iconcheck",
+        "iconsend",
+        "imghero",
+        "preconnect",
+        "projectprime",
+        "restoran",
+        "tarasov",
+        "десктопы",
+        "технокряк"
+    ],
+    "cSpell.ignoreWords": [
+        "demianenko",
+        "ermakov",
+        "orlean",
+        "projectboxes",
+        "repina",
+        "tecknokriak"
     ]
 }

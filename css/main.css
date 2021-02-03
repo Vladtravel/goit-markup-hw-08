@@ -352,7 +352,8 @@ ul {
   .contacts-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .contacts-nav .mail, .contacts-nav .phone {
+  .contacts-nav .mail,
+  .contacts-nav .phone {
     display: none;
   }
 }
@@ -433,12 +434,14 @@ ul {
   fill: #2196f3;
 }
 
-.mail, .phone {
+.mail,
+.phone {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 1199px) {
-  .mail, .phone {
+  .mail,
+  .phone {
     margin-right: 8px;
   }
 }
@@ -612,7 +615,8 @@ ul {
   text-transform: uppercase;
 }
 
-.social-networks__link:hover, .social-networks__link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: #2196f3;
   fill: white;
 }
@@ -1095,10 +1099,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .social-networks__item {

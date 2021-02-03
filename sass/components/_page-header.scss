@@ -1,39 +1,37 @@
 
  
  .page-header {
-    background-color: $bg-color-white;
-    border-bottom: 1px solid #ececec;
-    position: relative;
-    
-   
+  background-color: $bg-color-white;
+  border-bottom: 1px solid #ececec;
+  position: relative;
 
-    &__logo {
-      font-family: Raleway;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      color: $primary-text-color;
-      
+  &__logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;      
       
       &--start {
         color: $text-color-blue;
       }
+
       &--finish {
         color: $primary-text-color;
       }
+
       @media screen and (min-width: 768px) {
         margin-right: 88px;
-      }  
+      }
+
       @media screen and (min-width: 1200px) {
         margin-right: 93px;
         font-size: 26px;
-      } 
-      
+      }       
     }
   }
-
   
   .main-nav {
     display: flex;
@@ -42,13 +40,11 @@
     justify-items: center;
     
     @media screen and (max-width: 767px) {
-    justify-content: space-between;
+      justify-content: space-between;
     
-    }  
+    }       
     
-    
-    
-    &__button{     
+    &__button {     
       display: inline-flex;
       padding: 0; 
       margin: 0;          
@@ -64,35 +60,36 @@
       @media screen and (min-width: 768px) {
         display: none;
       }
-      &.is-open .icon-cross{
-        display: block;
-        
+
+      &.is-open .icon-cross {
+        display: block;        
       }
-      &.is-open .icon-menu{
+
+      &.is-open .icon-menu {
         display: none;
       }
-      &:hover{
-        fill: $text-color-blue;
-      }
-      &:focus{
-        fill: $text-color-blue;
-      }
-     
-    }    
-     
 
-  .icon-cross{
-    display: none;
-    
-    
+      &:hover {
+        fill: $text-color-blue;
+      }
+
+      &:focus {
+        fill: $text-color-blue;
+      }
+     
+    }       
+
+  .icon-cross {
+    display: none;      
   }
-  .icon-menu{
+
+  .icon-menu {
     display: inline-flex;
   }
 }
-  .menu-container{
+
+  .menu-container {
     @media screen and (max-width: 767px) {
-      
     display: none;
     position: absolute; 
     margin: 0;
@@ -120,18 +117,17 @@
     color: $primary-text-color; 
     width: 100%;    
     
-    }
-      
+    }      
     } 
 
     @media screen and (min-width: 768px){
       display: flex;
       justify-content: space-between;
-      margin-left: 0;
-    
+      margin-left: 0;    
   }
+
   @media screen and (min-width: 1200px) {
-    align-items: center;;
+    align-items: center;
     
   }
 }
@@ -146,19 +142,17 @@
     @media screen and (min-width: 768px) {
       margin-right: 84px;
     }
+
     @media screen and (min-width: 1200px) {
-      margin-right: 304px;      
-      
-    }
-    
+      margin-right: 304px;       
+    }    
 
     @media screen and (max-width: 767px) {
     display: block;   
     padding: 0; 
     text-align: left;     
     margin: 0;  
-    margin-bottom: 306px;      
-    
+    margin-bottom: 306px;     
     }
 
     &__item {
@@ -177,11 +171,9 @@
           margin-bottom: 32px;
         }
         }
-    }
+    }  
   
-  
-    &__link {
-    
+    &__link {    
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -204,11 +196,10 @@
       letter-spacing: 0.02em;
     }
 
-    
-
       &:hover {
       color: $text-color-blue;
       }
+
       &:focus {
       color: $text-color-blue;
       }
@@ -217,7 +208,9 @@
       color: $text-color-blue;
       position: relative;
       }
+
       @media screen and (min-width: 768px) {
+
       &--current::after {
       position: absolute;
       content: '';
@@ -232,8 +225,7 @@
       top: 43px;
       }
     }
-    } 
-  
+    }   
   }
     
   .contacts-nav {   
@@ -255,9 +247,11 @@
     cursor: pointer;
 
     &__item:not(:first-child) {
+
       @media screen and (max-width: 1199px) {
         margin-bottom: 10px;
       }
+
       @media screen and (min-width: 1200px) {
         
         &:not(:first-child) {
@@ -271,6 +265,7 @@
       font-size: 12px;
       align-items: flex-start;
     }
+
     @media screen and (max-width: 767px) {
       height: 100px;
       display: block; 
@@ -288,20 +283,16 @@
         margin-bottom: 32px;
       }
 
-      .mail, .phone {
+      .mail, 
+      .phone {
         display: none;
-      }       
-
-
-      }
-
-    
+      }   
+      }    
   
   &__link-phone {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
-    
+    font-weight: 500;    
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $secondary-text-color;
@@ -312,8 +303,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;  
     
-    @media screen and (max-width: 767px) {
-      
+    @media screen and (max-width: 767px) {      
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
@@ -321,15 +311,13 @@
       line-height: 40px;
       letter-spacing: 0.02em;
       color: $text-color-blue; 
-      height: 34px;   
-  
+      height: 34px;    
   }  
   }
     &__link-mail {
       font-family: Roboto;
       font-style: normal;
-      font-weight: 500;
-      
+      font-weight: 500;      
       line-height: 1.14;
       letter-spacing: 0.02em;
       color: $secondary-text-color;
@@ -339,12 +327,13 @@
       display: block;
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
+
       &:hover {
         color: $text-color-blue;
         fill: $text-color-blue;  
       }
-      @media screen and (max-width: 767px) {
-      
+
+      @media screen and (max-width: 767px) {      
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -355,35 +344,33 @@
     } 
     }
 
-  &__link-mail:hover, &__link-phone:hover {
+  &__link-mail:hover, 
+  &__link-phone:hover {
     color: $text-color-blue;
     fill: $text-color-blue;
   }
   
-  &__link-mail:focus, &__link-phone:focus{
+  &__link-mail:focus, 
+  &__link-phone:focus {
     color: $text-color-blue;
     fill: $text-color-blue;
   }
   }
     
-  .mail, .phone{    
+  .mail, 
+  .phone{    
     margin-right: 10px;      
     @media screen and (max-width: 1199px) {
     margin-right: 8px;
-    }
-   
+    }   
   }  
-  
-  
-
-
  
-  .network-items{
+  .network-items {
   margin: 0;
   padding: 0;
   text-align: left;
     
-    &__link{
+    &__link {
       display: inline-block;
       font-family: Roboto;
       font-style: normal;
@@ -394,18 +381,18 @@
       color: $text-color-blue;
       height: 22px;  
     }
+
     @media screen and (min-width: 768px){
     display: none;  
-  }
+  }  
 
-  
-
-&__list{
+&__list {
   display: inline-block;  
 }  
+
 &__list:not(:last-child) {
   margin-right: 20px;
 }
-  }
+}
 
   

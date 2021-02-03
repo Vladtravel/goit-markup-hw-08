@@ -16,17 +16,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;   
+
     @media screen and (min-width: 1200px){
       height: 600px;
     }
      
     @media screen and (min-device-pixel-ratio: 2),  
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    background-image: url(../images/Imghero@2x.jpg);
+           screen and (min-resolution: 192dpi),
+           screen and (min-resolution: 2dppx) {
+      background-image: url(../images/Imghero@2x.jpg);
     
   }
-
 
     &__title {
       width: 360px;
@@ -44,7 +44,8 @@
       margin-bottom: 30px;
       margin-left: auto;
       margin-right: auto;
-      @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1200px) {
       width: 696px;
       height: 120px;  
       font-size: 44px;
@@ -78,12 +79,12 @@
       color: $text-color-white;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       cursor: pointer;
-      @media screen and (min-width: 1200px){
-        margin-bottom: 200px;
+
+    @media screen and (min-width: 1200px){
+      margin-bottom: 200px;
       }
     }
-  }
-  
+  }  
   
   .backdrop {
     position: fixed;
@@ -92,14 +93,12 @@
     left: 0px;
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    
-    
-  }
+    z-index: 1; 
+    }
+
   .is-hidden {
     opacity: 0;
-    pointer-events: none;
-    
+    pointer-events: none;    
   }
   
   .modal {
@@ -114,11 +113,9 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
-    overflow-y: scroll;
+    overflow-y: scroll;    
     
-    
-    
-    @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     height: 609px;  
     }
@@ -134,12 +131,12 @@
       color: $primary-text-color;
       margin: 0;
       margin-bottom: 12px;
-      @media screen and (max-width: 1199px) {
+
+    @media screen and (max-width: 1199px) {
       line-height: 30px;  
       }
     }
-  }
-  
+  }  
     
   .close-modal {
     position: absolute;
@@ -157,11 +154,11 @@
     align-content: center;
     justify-content: center;
 
-    &:hover, &:focus {
+    &:hover, 
+    &:focus {
       fill: $text-color-blue;
     }
-  }
-  
+  }  
  
   .modal-form {
     display: flex;
@@ -223,18 +220,20 @@
       border: 1px solid $text-color-blue;
       outline: $text-color-blue;
     }
-  }    
-  
+  }      
 
   .modal-form__input:focus + .modal-form__icon {
     fill: $text-color-blue;
   }
+
   .modal-form__input:hover + .modal-form__icon {
     fill: $text-color-blue;
   }
+
   .modal-form__input:hover {
     border: 1px solid $text-color-blue;
   }
+
   .modal-form__input:focus {
     border: 1px solid $text-color-blue;
     outline: $text-color-blue;
@@ -254,7 +253,8 @@
       color: #757575;
       display: flex;
       align-items: center;
-      @media screen and (max-width: 1199px){
+
+    @media screen and (max-width: 1199px){
       font-size: 12px;
       line-height: 14px;  
       }  
@@ -273,8 +273,7 @@
       margin-right: 7px;
     }
     
-  }
-  
+  }  
   
   .checkbox__input:checked + .checkbox__icon {
     background-color: $bg-color-blue;

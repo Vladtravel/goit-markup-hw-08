@@ -352,7 +352,8 @@ ul {
   .contacts-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .contacts-nav .mail, .contacts-nav .phone {
+  .contacts-nav .mail,
+  .contacts-nav .phone {
     display: none;
   }
 }
@@ -433,12 +434,14 @@ ul {
   fill: #2196f3;
 }
 
-.mail, .phone {
+.mail,
+.phone {
   margin-right: 10px;
 }
 
 @media screen and (max-width: 1199px) {
-  .mail, .phone {
+  .mail,
+  .phone {
     margin-right: 8px;
   }
 }
@@ -612,7 +615,8 @@ ul {
   text-transform: uppercase;
 }
 
-.social-networks__link:hover, .social-networks__link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: #2196f3;
   fill: white;
 }
@@ -736,10 +740,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .social-networks__item {
@@ -820,10 +821,7 @@ ul {
   color: #212121;
   border-radius: 4px;
   border-color: transparent;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
   cursor: pointer;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -887,10 +885,7 @@ ul {
   bottom: -100%;
   width: 100%;
   height: 100%;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 63px 24px;
   margin: 0;
   font-family: Roboto;
   font-style: normal;
