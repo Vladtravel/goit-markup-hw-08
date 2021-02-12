@@ -474,8 +474,15 @@ ul {
   display: inline-block;
 }
 
-.network-items__list:not(:last-child) {
-  margin-right: 20px;
+.network-items__list:not(:last-child)::after {
+  content: '';
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer {
