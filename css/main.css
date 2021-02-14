@@ -150,7 +150,8 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     overflow-y: scroll;
     position: fixed;

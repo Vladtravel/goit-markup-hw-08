@@ -1,2 +1,3 @@
-const number = '5';
-console.log(typeof Number(number));
+const brand = 'Samsung';
+const normalizeBrand = brand.toLocaleUpperCase();
+console.log(normalizeBrand);
