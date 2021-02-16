@@ -25,6 +25,10 @@ ul {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 .page-header__logo {
@@ -65,7 +69,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
   justify-items: center;
 }
 
@@ -74,6 +77,14 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    height: 80px;
   }
 }
 
@@ -743,6 +754,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 0;
+  margin-top: 60px;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,6 +774,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .section-hero {
     height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    margin-top: 81px;
   }
 }
 

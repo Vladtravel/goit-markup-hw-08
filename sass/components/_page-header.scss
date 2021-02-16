@@ -2,6 +2,10 @@
   background-color: $bg-color-white;
   border-bottom: 1px solid #ececec;
   position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 
   &__logo {
     font-family: Raleway;
@@ -34,11 +38,16 @@
 .main-nav {
   display: flex;
   align-items: center;
-  height: 80px;
   justify-items: center;
 
   @media screen and (max-width: 767px) {
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
   }
 
   &__button {
